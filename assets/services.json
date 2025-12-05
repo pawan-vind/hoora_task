@@ -1,0 +1,502 @@
+[
+    {
+        "id": 1,
+        "name": "Car Wash",
+        "description": "Complete exterior and interior cleaning"
+    },
+    {
+        "id": 2,
+        "name": "Oil Change",
+        "description": "Engine oil replacement and filter"
+    },
+    {
+        "id": 3,
+        "name": "Tire Replacement",
+        "description": "Replace worn tires with new ones"
+    },
+    {
+        "id": 4,
+        "name": "Battery Check",
+        "description": "Full battery diagnostic and replacement"
+    },
+    {
+        "id": 5,
+        "name": "AC Service",
+        "description": "Air conditioning maintenance and recharge"
+    },
+    {
+        "id": 6,
+        "name": "Brake Inspection",
+        "description": "Brake pads and rotor inspection"
+    },
+    {
+        "id": 7,
+        "name": "Wheel Alignment",
+        "description": "Adjust wheel angles for proper alignment"
+    },
+    {
+        "id": 8,
+        "name": "Engine Tuning",
+        "description": "Optimize engine performance"
+    },
+    {
+        "id": 9,
+        "name": "Transmission Service",
+        "description": "Transmission fluid and filter service"
+    },
+    {
+        "id": 10,
+        "name": "Paint Touchup",
+        "description": "Minor paint repair and touchup"
+    },
+    {
+        "id": 11,
+        "name": "Glass Repair",
+        "description": "Repair or replace cracked windshields"
+    },
+    {
+        "id": 12,
+        "name": "Interior Detailing",
+        "description": "Deep clean upholstery and carpets"
+    },
+    {
+        "id": 13,
+        "name": "Headlight Restoration",
+        "description": "Restore clarity to foggy headlights"
+    },
+    {
+        "id": 14,
+        "name": "Suspension Check",
+        "description": "Inspect and service suspension components"
+    },
+    {
+        "id": 15,
+        "name": "Fuel System Clean",
+        "description": "Clean injectors and fuel lines"
+    },
+    {
+        "id": 16,
+        "name": "AC Recharge",
+        "description": "Refrigerant recharge for AC system"
+    },
+    {
+        "id": 17,
+        "name": "Radiator Service",
+        "description": "Coolant flush and radiator inspection"
+    },
+    {
+        "id": 18,
+        "name": "Wheel Balancing",
+        "description": "Balance wheels for smooth ride"
+    },
+    {
+        "id": 19,
+        "name": "Timing Belt Replacement",
+        "description": "Replace timing belt per service interval"
+    },
+    {
+        "id": 20,
+        "name": "Exhaust Repair",
+        "description": "Fix leaks or replace muffler"
+    },
+    {
+        "id": 21,
+        "name": "Spark Plug Replacement",
+        "description": "Replace spark plugs for efficient combustion"
+    },
+    {
+        "id": 22,
+        "name": "Steering Service",
+        "description": "Inspect and repair steering components"
+    },
+    {
+        "id": 23,
+        "name": "Battery Replacement",
+        "description": "Install new battery and test charging system"
+    },
+    {
+        "id": 24,
+        "name": "AC Filter Replacement",
+        "description": "Replace cabin air filter"
+    },
+    {
+        "id": 25,
+        "name": "Detailing Package",
+        "description": "Premium exterior and interior detailing"
+    },
+    {
+        "id": 26,
+        "name": "Engine Diagnostic",
+        "description": "Full computer diagnostics and report"
+    },
+    {
+        "id": 27,
+        "name": "Underbody Wash",
+        "description": "Remove salt and debris from undercarriage"
+    },
+    {
+        "id": 28,
+        "name": "Polishing",
+        "description": "Paint polishing and scratch reduction"
+    },
+    {
+        "id": 29,
+        "name": "Seat Repair",
+        "description": "Upholstery repair and stitching"
+    },
+    {
+        "id": 30,
+        "name": "Key Replacement",
+        "description": "Replace or program car keys"
+    },
+    {
+        "id": 31,
+        "name": "Car Inspection",
+        "description": "Comprehensive vehicle inspection"
+    },
+    {
+        "id": 32,
+        "name": "Roadside Assistance",
+        "description": "Towing and emergency services"
+    },
+    {
+        "id": 33,
+        "name": "Accessory Installation",
+        "description": "Install audio, lights, or accessories"
+    },
+    {
+        "id": 34,
+        "name": "AC Compressor Repair",
+        "description": "Repair or replace AC compressor"
+    },
+    {
+        "id": 35,
+        "name": "Detail - Engine Bay",
+        "description": "Clean and dress engine bay"
+    },
+    {
+        "id": 36,
+        "name": "Fog Light Installation",
+        "description": "Install fog or auxiliary lights"
+    },
+    {
+        "id": 37,
+        "name": "Insurance Inspection",
+        "description": "Pre-insurance vehicle check"
+    },
+    {
+        "id": 38,
+        "name": "VIN Registration",
+        "description": "Verify and register vehicle VIN"
+    },
+    {
+        "id": 39,
+        "name": "Emission Test",
+        "description": "Perform emissions and smog test"
+    },
+    {
+        "id": 40,
+        "name": "Car Sanitization",
+        "description": "Sanitize interior for hygiene"
+    },
+    {
+        "id": 41,
+        "name": "Tire Rotation",
+        "description": "Rotate tires for even wear"
+    },
+    {
+        "id": 42,
+        "name": "Brake Fluid Change",
+        "description": "Flush and replace brake fluid"
+    },
+    {
+        "id": 43,
+        "name": "Clutch Repair",
+        "description": "Diagnose and repair clutch issues"
+    },
+    {
+        "id": 44,
+        "name": "AC Drier Replacement",
+        "description": "Replace the AC system drier"
+    },
+    {
+        "id": 45,
+        "name": "Window Tinting",
+        "description": "Apply window tint film"
+    },
+    {
+        "id": 46,
+        "name": "Road Test",
+        "description": "Professional test drive and analysis"
+    },
+    {
+        "id": 47,
+        "name": "Oil Filter Replacement",
+        "description": "Replace oil filter during service"
+    },
+    {
+        "id": 48,
+        "name": "Hybrid Battery Check",
+        "description": "Inspect hybrid battery health"
+    },
+    {
+        "id": 49,
+        "name": "Detail - Leather Care",
+        "description": "Leather cleaning and conditioning"
+    },
+    {
+        "id": 50,
+        "name": "Paint Protection Film",
+        "description": "Apply protective film to body"
+    },
+    {
+        "id": 51,
+        "name": "Car Odor Removal",
+        "description": "Eliminate persistent odors"
+    },
+    {
+        "id": 52,
+        "name": "Accessory Wiring",
+        "description": "Professional wiring of accessories"
+    },
+    {
+        "id": 53,
+        "name": "Mirror Replacement",
+        "description": "Replace broken side mirrors"
+    },
+    {
+        "id": 54,
+        "name": "Cooling System Service",
+        "description": "Inspect hoses, coolant, and thermostat"
+    },
+    {
+        "id": 55,
+        "name": "AC Leak Repair",
+        "description": "Locate and repair refrigerant leaks"
+    },
+    {
+        "id": 56,
+        "name": "Wheel Refurbishment",
+        "description": "Repair and repaint alloy wheels"
+    },
+    {
+        "id": 57,
+        "name": "Interior Lighting Upgrade",
+        "description": "Upgrade cabin lighting to LEDs"
+    },
+    {
+        "id": 58,
+        "name": "Transmission Flush",
+        "description": "Complete transmission fluid flush"
+    },
+    {
+        "id": 59,
+        "name": "Turbocharger Service",
+        "description": "Inspect and repair turbo systems"
+    },
+    {
+        "id": 60,
+        "name": "Park Assist Calibration",
+        "description": "Calibrate parking sensors and cameras"
+    },
+    {
+        "id": 61,
+        "name": "Head Gasket Repair",
+        "description": "Repair head gasket leaks and damage"
+    },
+    {
+        "id": 62,
+        "name": "Detail - Ceramic Coating",
+        "description": "Apply ceramic coating for long-term protection"
+    },
+    {
+        "id": 63,
+        "name": "Performance Tuning",
+        "description": "ECU remap and performance tuning"
+    },
+    {
+        "id": 64,
+        "name": "Vehicle Wrap",
+        "description": "Full or partial vehicle wrap application"
+    },
+    {
+        "id": 65,
+        "name": "Airbag Inspection",
+        "description": "Ensure airbags are functional and safe"
+    },
+    {
+        "id": 66,
+        "name": "Road Noise Check",
+        "description": "Diagnose sources of road noise"
+    },
+    {
+        "id": 67,
+        "name": "Car Alarm Installation",
+        "description": "Install or repair alarm systems"
+    },
+    {
+        "id": 68,
+        "name": "Fuel Pump Replacement",
+        "description": "Replace faulty fuel pumps"
+    },
+    {
+        "id": 69,
+        "name": "Seatbelt Repair",
+        "description": "Repair or replace seatbelts"
+    },
+    {
+        "id": 70,
+        "name": "AC Sensor Replacement",
+        "description": "Replace AC system sensors"
+    },
+    {
+        "id": 71,
+        "name": "GPS Installation",
+        "description": "Install navigation and GPS systems"
+    },
+    {
+        "id": 72,
+        "name": "Fog Light Repair",
+        "description": "Repair fog or auxiliary lights"
+    },
+    {
+        "id": 73,
+        "name": "Convertible Top Repair",
+        "description": "Repair or replace convertible tops"
+    },
+    {
+        "id": 74,
+        "name": "Tow Bar Fitting",
+        "description": "Fit tow bars and wiring"
+    },
+    {
+        "id": 75,
+        "name": "Engine Mount Replacement",
+        "description": "Replace worn engine mounts"
+    },
+    {
+        "id": 76,
+        "name": "Glass Replacement",
+        "description": "Replace damaged windows and windshields"
+    },
+    {
+        "id": 77,
+        "name": "Detail - Nano Coating",
+        "description": "Apply nano-coating for water repellence"
+    },
+    {
+        "id": 78,
+        "name": "Child Seat Installation",
+        "description": "Professional child seat installation"
+    },
+    {
+        "id": 79,
+        "name": "Light Upgrades",
+        "description": "Upgrade to brighter, energy-efficient bulbs"
+    },
+    {
+        "id": 80,
+        "name": "Battery Terminal Cleaning",
+        "description": "Clean and secure battery terminals"
+    },
+    {
+        "id": 81,
+        "name": "AC Belt Replacement",
+        "description": "Replace belts driving the AC compressor"
+    },
+    {
+        "id": 82,
+        "name": "Wheel Nut Torque",
+        "description": "Ensure wheel nuts are torqued correctly"
+    },
+    {
+        "id": 83,
+        "name": "Alloy Wheel Repair",
+        "description": "Repair scuffed or bent alloy wheels"
+    },
+    {
+        "id": 84,
+        "name": "Car Window Repair",
+        "description": "Repair window regulators and motors"
+    },
+    {
+        "id": 85,
+        "name": "Nitrogen Fill",
+        "description": "Fill tires with nitrogen for stability"
+    },
+    {
+        "id": 86,
+        "name": "Paint Correction",
+        "description": "Professional paint correction service"
+    },
+    {
+        "id": 87,
+        "name": "Cabin Noise Reduction",
+        "description": "Add sound deadening materials"
+    },
+    {
+        "id": 88,
+        "name": "ECU Diagnostics",
+        "description": "Advanced computer diagnostics and fixes"
+    },
+    {
+        "id": 89,
+        "name": "Battery Health Check",
+        "description": "Perform load test and health assessment"
+    },
+    {
+        "id": 90,
+        "name": "Door Adjustment",
+        "description": "Adjust doors for proper fit and seals"
+    },
+    {
+        "id": 91,
+        "name": "Headlight Alignment",
+        "description": "Align headlights for correct beam"
+    },
+    {
+        "id": 92,
+        "name": "Wiper Replacement",
+        "description": "Replace worn windshield wipers"
+    },
+    {
+        "id": 93,
+        "name": "Fuel Injector Repair",
+        "description": "Clean or replace faulty injectors"
+    },
+    {
+        "id": 94,
+        "name": "Air Filter Replacement",
+        "description": "Replace engine air filter"
+    },
+    {
+        "id": 95,
+        "name": "Transmission Diagnostic",
+        "description": "Diagnose shifting and slipping issues"
+    },
+    {
+        "id": 96,
+        "name": "AC Evaporator Repair",
+        "description": "Repair or replace the AC evaporator"
+    },
+    {
+        "id": 97,
+        "name": "Interior Trim Repair",
+        "description": "Repair broken interior trims"
+    },
+    {
+        "id": 98,
+        "name": "Detail - Headliner Clean",
+        "description": "Clean and restore headliner fabric"
+    },
+    {
+        "id": 99,
+        "name": "Performance Brake Kit",
+        "description": "Install high-performance brake kits"
+    },
+    {
+        "id": 100,
+        "name": "Vehicle Storage Prep",
+        "description": "Prepare vehicle for long-term storage"
+    }
+]
