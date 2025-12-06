@@ -11,6 +11,20 @@ import 'package:hoora_task/src/bloc/services/services_bloc.dart';
 
 import '../test/helpers/fake_repository.dart';
 
+Future<void> waitForCondition(
+  WidgetTester tester,
+  bool Function() condition, {
+  Duration timeout = const Duration(seconds: 5),
+}) async {
+  final end = DateTime.now().add(timeout);
+  while (!condition()) {
+    if (DateTime.now().isAfter(end)) {
+      throw Exception('Timeout waiting for condition');
+    }
+    await tester.pump(const Duration(milliseconds: 100));
+  }
+}
+
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
@@ -20,6 +34,13 @@ void main() {
     final tmp = Directory.systemTemp.createTempSync();
     Hive.init(tmp.path);
     final box = await Hive.openBox<int>('favorites');
+    addTearDown(() async {
+      if (box.isOpen) await box.close();
+      try {
+        tmp.deleteSync(recursive: true);
+      } catch (_) {}
+    });
+
     final repo = FakeRepository();
 
     // Start first instance and toggle favorite
@@ -32,9 +53,13 @@ void main() {
         ),
       ),
     );
-    await tester.pumpAndSettle(const Duration(seconds: 2));
-    await tester.tap(find.byIcon(Icons.favorite_border).first);
-    await tester.pumpAndSettle(const Duration(seconds: 1));
+    await waitForCondition(
+      tester,
+      () => find.byKey(const Key('fav_1')).evaluate().isNotEmpty,
+      timeout: const Duration(seconds: 8),
+    );
+    await tester.tap(find.byKey(const Key('fav_1')));
+    await tester.pump(const Duration(milliseconds: 100));
 
     expect(box.values.isNotEmpty, isTrue);
 
@@ -50,14 +75,14 @@ void main() {
         ),
       ),
     );
-    await tester.pumpAndSettle(const Duration(seconds: 2));
+    await waitForCondition(
+      tester,
+      () => bloc.state.favorites.isNotEmpty,
+      timeout: const Duration(seconds: 5),
+    );
 
     expect(bloc.state.favorites.isNotEmpty, isTrue);
 
     await bloc.close();
-    await box.close();
-    try {
-      tmp.deleteSync(recursive: true);
-    } catch (_) {}
   });
 }

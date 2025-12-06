@@ -206,7 +206,7 @@ class _ServicesTabState extends State<_ServicesTab> {
     return ListView.separated(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       itemCount: 6,
-      separatorBuilder: (context, index)  => const SizedBox(height: 8),
+      separatorBuilder: (context, index) => const SizedBox(height: 8),
       itemBuilder: (context, index) {
         return Shimmer.fromColors(
           baseColor: Theme.of(context).dividerColor.withOpacity(0.08),
@@ -374,6 +374,7 @@ class _ServiceCard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: IconButton(
+                              key: Key('fav_${service.id}'),
                               onPressed: onToggleFavorite,
                               iconSize: 18,
                               splashRadius: 20,
