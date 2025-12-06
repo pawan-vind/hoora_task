@@ -58,12 +58,10 @@ void main() {
 
       expect(find.byType(RefreshIndicator), findsNothing);
 
-      // Wait until the bloc has loaded the first page
       await waitForCondition(tester, () => bloc.state.services.length == 20);
 
       expect(find.text('Service 1'), findsOneWidget);
 
-      // Ensure repository returned 20 items for the first page
       expect(bloc.state.services.length, equals(20));
 
       await bloc.close();
@@ -83,7 +81,6 @@ void main() {
         ),
       );
 
-      // Wait until first card is rendered and its favorite button exists
       await waitForCondition(
         tester,
         () => find.byKey(const Key('fav_1')).evaluate().isNotEmpty,
@@ -114,11 +111,9 @@ void main() {
         ),
       );
 
-      // Wait for first page to load
       await waitForCondition(tester, () => bloc.state.services.length == 20);
       expect(find.text('Service 20'), findsOneWidget);
 
-      // Scroll until Service 40 becomes visible (advance in small steps)
       await tester.scrollUntilVisible(
         find.text('Service 40'),
         400.0,

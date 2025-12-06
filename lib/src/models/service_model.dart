@@ -1,11 +1,15 @@
-class Service {
+class ServiceModel {
   final int id;
   final String name;
   final String description;
 
-  Service({required this.id, required this.name, required this.description});
+  ServiceModel({
+    required this.id,
+    required this.name,
+    required this.description,
+  });
 
-  factory Service.fromJson(Map<String, dynamic> json) => Service(
+  factory ServiceModel.fromJson(Map<String, dynamic> json) => ServiceModel(
     id: json['id'] as int,
     name: json['name'] as String,
     description: json['description'] as String,
@@ -19,7 +23,7 @@ class Service {
 }
 
 class ServicesResponse {
-  final List<Service> services;
+  final List<ServiceModel> services;
 
   ServicesResponse({required this.services});
 
@@ -27,7 +31,7 @@ class ServicesResponse {
     if (json is List) {
       return ServicesResponse(
         services: json
-            .map((e) => Service.fromJson(e as Map<String, dynamic>))
+            .map((e) => ServiceModel.fromJson(e as Map<String, dynamic>))
             .toList(),
       );
     }
@@ -36,11 +40,11 @@ class ServicesResponse {
       if (data is List) {
         return ServicesResponse(
           services: data
-              .map((e) => Service.fromJson(e as Map<String, dynamic>))
+              .map((e) => ServiceModel.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
       }
-      return ServicesResponse(services: [Service.fromJson(json)]);
+      return ServicesResponse(services: [ServiceModel.fromJson(json)]);
     }
     throw FormatException('Unexpected JSON format for ServicesResponse');
   }

@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
 
-import '../models/service.dart';
+import '../models/service_model.dart';
 
 class ServiceRepository {
   final Dio dio;
@@ -11,7 +11,10 @@ class ServiceRepository {
 
   ServiceRepository({Dio? dio, this.baseUrl}) : dio = dio ?? Dio();
 
-  Future<List<Service>> fetchServices({int page = 1, int pageSize = 20}) async {
+  Future<List<ServiceModel>> fetchServices({
+    int page = 1,
+    int pageSize = 20,
+  }) async {
     if (baseUrl != null) {
       try {
         final resp = await dio.get(
@@ -31,7 +34,7 @@ class ServiceRepository {
     final resp = ServicesResponse.fromJson(decoded);
     final all = resp.services;
     final start = (page - 1) * pageSize;
-    if (start >= all.length) return <Service>[];
+    if (start >= all.length) return <ServiceModel>[];
     final end = (start + pageSize) < all.length
         ? (start + pageSize)
         : all.length;
