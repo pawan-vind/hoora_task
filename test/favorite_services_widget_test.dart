@@ -40,16 +40,12 @@ void main() {
         ),
       );
 
-      // initial shimmer (loading) appears
       expect(find.byType(RefreshIndicator), findsNothing);
 
-      // wait for bloc to fetch
       await tester.pumpAndSettle(const Duration(seconds: 2));
 
-      // expect at least one service title visible
       expect(find.text('Service 1'), findsOneWidget);
 
-      // list contains 20 items (item 20 visible)
       expect(find.text('Service 20'), findsOneWidget);
 
       await bloc.close();
@@ -72,14 +68,12 @@ void main() {
 
       await tester.pumpAndSettle(const Duration(seconds: 2));
 
-      // find first favorite button (assumes IconButton present)
       final favButton = find.byIcon(Icons.favorite_border).first;
       expect(favButton, findsOneWidget);
 
       await tester.tap(favButton);
       await tester.pumpAndSettle(const Duration(seconds: 1));
 
-      // after tapping, the id 1 should be present in Hive box
       expect(box.values.contains(1), isTrue);
 
       await bloc.close();
@@ -102,14 +96,11 @@ void main() {
 
       await tester.pumpAndSettle(const Duration(seconds: 2));
 
-      // verify item 20 exists
       expect(find.text('Service 20'), findsOneWidget);
 
-      // scroll to bottom to trigger pagination
       await tester.drag(find.byType(ListView).first, const Offset(0, -2000));
       await tester.pumpAndSettle(const Duration(seconds: 2));
-
-      // after pagination, Service 40 should appear
+ 
       expect(find.text('Service 40'), findsOneWidget);
 
       await bloc.close();

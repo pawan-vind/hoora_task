@@ -1,7 +1,6 @@
 import 'package:hoora_task/src/models/service.dart';
 import 'package:hoora_task/src/repositories/service_repository.dart';
 
-/// A small fake repository used in widget and integration tests.
 class FakeRepository extends ServiceRepository {
   FakeRepository();
 
